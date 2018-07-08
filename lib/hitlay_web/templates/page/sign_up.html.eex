@@ -1,0 +1,58 @@
+<style type="text/css">
+  body {
+    background: #f2f6f7;
+  }
+</style>
+<div class="container registration-pages">
+  <div class="container-box">
+    <h1 class="header-logo"><a href="/" rel="nofollow"></a></h1>
+    <form id="sign-up" method="POST">
+      <div class="header">
+        <h3 class="tagline">Create a free account</h3>
+      </div>
+      <div class="social-sign-in">
+        <span class="susi-with">SIGN UP WITH:</span>
+        <a id="google-sign-up" rel="nofollow" href="/a/add_google_account" class="susi-btn google-susi-btn button" data-network="google"><img src="//d1ayxb9ooonjts.cloudfront.net/8bc625062aeffa94729b9336243bed9d.svg" alt="Google" width="20"></a>
+        <a id="facebook-sign-up" rel="nofollow" href="/a/add_facebook_account" class="susi-btn facebook-susi-btn button" data-network="facebook"><img src="//d1ayxb9ooonjts.cloudfront.net/0e5903c8a59540fefb8d56fe51863bb0.svg" alt="Facebook" width="20"></a>
+        <a id="twitter-sign-up" rel="nofollow" href="/a/add_twitter_account" class="susi-btn twitter-susi-btn button" data-network="twitter"><img src="//d3h5jhobc20ump.cloudfront.net/b8221293363ccb5ce7460067acbe55f5.svg" alt="Twitter" width="22"></a>
+      </div>
+      <p class="separator t-center">
+        <span>Or</span>
+      </p>
+      <div class="susi-fields-wrapper">
+        <fieldset>
+          <label for="username">
+            <input class="text" type="text" name="username" autocomplete="off" placeholder="Username" tabindex="3">
+            <span class="error-message"></span>
+          </label>
+          <label for="email">
+            <input class="text" type="text" name="email" autocomplete="off" placeholder="Email address" tabindex="4">
+            <span class="error-message"></span>
+          </label>
+          <label for="password" class="password-block">
+            <input class="text" type="password" name="password" autocomplete="off" placeholder="Password" tabindex="5">
+            <span class="password-reqs">6+ characters</span>
+            <span class="error-message"></span>
+          </label>
+          <label for="password2">
+            <input class="text" type="password" name="password2" autocomplete="off" placeholder="Password again" tabindex="6">
+            <span class="error-message"></span>
+          </label>
+          <div class="switch to-sign-in password-tip">
+            <span class="gray-link">Password should be 6 or more characters, must contain at least one letter, number, and special character</span>
+          </div>
+          <span class="error-message"></span>
+          <input id="submit" type="submit" class="button button-primary sign-up-in" value="Create account" tabindex="8">
+        </fieldset>
+      </div>
+    </form>
+    <div class="t-center">
+      <div class="switch to-sign-in terms-and-conditions"><span class="gray-link">By creating an account, you agree to <br>Bitly's
+      <a href="/pages/terms-of-service">Terms of Service</a> and <a href="/pages/privacy">Privacy Policy.</a></span>
+      </div>
+      <div class="switch to-sign-up" href="/a/sign_up" tabindex="7"><span class="gray-link">Don't have an account?</span> <a href="#">Sign Up Now</a></div>
+      <div class="switch to-sign-in" href="/a/sign_in" tabindex="8"><span class="gray-link">Already have an account?</span> <a href="#">Sign In</a></div>
+      <div class="switch"><a href="/sso/url_slug" tabindex="9">Sign In with SSO</a></div>
+    </div>
+  </div>
+</div>

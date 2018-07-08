@@ -14,9 +14,11 @@ defmodule HitlayWeb.Router do
   end
 
   scope "/", HitlayWeb do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
-    get "/", PageController, :index
+    get "/a/sign_up", PageController, :index
+    get "/a/sign_in", PageController, :index
+
   end
 
   # Other scopes may use custom stacks.
