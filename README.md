@@ -1,4 +1,4 @@
-# Hitlay
+# Hitly
 
 To start your Phoenix server:
 

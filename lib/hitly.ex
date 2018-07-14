@@ -1,6 +1,6 @@
-defmodule Hitlay do
+defmodule Hitly do
   @moduledoc """
-  Hitlay keeps the contexts that define your domain
+  Hitly keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

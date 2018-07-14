@@ -1,9 +1,9 @@
-defmodule Hitlay.MixProject do
+defmodule Hitly.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :hitlay,
+      app: :hitly,
       version: "0.1.0",
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env),
@@ -19,7 +19,7 @@ defmodule Hitlay.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {Hitlay.Application, []},
+      mod: {Hitly.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

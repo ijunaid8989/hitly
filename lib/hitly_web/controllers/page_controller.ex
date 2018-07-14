@@ -1,5 +1,5 @@
-defmodule HitlayWeb.PageController do
-  use HitlayWeb, :controller
+defmodule HitlyWeb.PageController do
+  use HitlyWeb, :controller
   require IEx
 
   def index(conn, _params) do

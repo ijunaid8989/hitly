@@ -1,4 +1,4 @@
-defmodule HitlayWeb.ErrorHelpers do
+defmodule HitlyWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -36,9 +36,9 @@ defmodule HitlayWeb.ErrorHelpers do
     # should be written to the errors.po file. The :count option is
     # set by Ecto and indicates we should also apply plural rules.
     if count = opts[:count] do
-      Gettext.dngettext(HitlayWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(HitlyWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(HitlayWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(HitlyWeb.Gettext, "errors", msg, opts)
     end
   end
 end
