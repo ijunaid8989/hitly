@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :hitlay,
-  ecto_repos: [Hitlay.Repo]
+config :hitly,
+  ecto_repos: [Hitly.Repo]
 
 # Configures the endpoint
-config :hitlay, HitlayWeb.Endpoint,
+config :hitly, HitlyWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "0icnENppU3mjJ0GlywS9UH+2mfgfqLHDgFx2HbDKFJwU9aS4B+yCHv0NCOheLUPv",
-  render_errors: [view: HitlayWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Hitlay.PubSub,
+  render_errors: [view: HitlyWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Hitly.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

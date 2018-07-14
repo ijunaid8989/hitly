@@ -1,5 +1,5 @@
-defmodule HitlayWeb.PageControllerTest do
-  use HitlayWeb.ConnCase
+defmodule HitlyWeb.PageControllerTest do
+  use HitlyWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

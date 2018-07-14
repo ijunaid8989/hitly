@@ -1,4 +1,4 @@
 ExUnit.start()
 
-Ecto.Adapters.SQL.Sandbox.mode(Hitlay.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(Hitly.Repo, :manual)
 

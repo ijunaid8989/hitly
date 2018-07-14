@@ -1,5 +1,5 @@
-defmodule HitlayWeb.Router do
-  use HitlayWeb, :router
+defmodule HitlyWeb.Router do
+  use HitlyWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,7 +13,7 @@ defmodule HitlayWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", HitlayWeb do
+  scope "/", HitlyWeb do
     pipe_through :browser
 
     get "/a/sign_up", PageController, :index
@@ -22,7 +22,7 @@ defmodule HitlayWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", HitlayWeb do
+  # scope "/api", HitlyWeb do
   #   pipe_through :api
   # end
 end

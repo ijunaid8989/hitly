@@ -1,7 +1,7 @@
-defmodule HitlayWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :hitlay
+defmodule HitlyWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :hitly
 
-  socket "/socket", HitlayWeb.UserSocket,
+  socket "/socket", HitlyWeb.UserSocket,
     websocket: true,
     longpoll: false
 
@@ -10,7 +10,7 @@ defmodule HitlayWeb.Endpoint do
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :hitlay, gzip: false,
+    at: "/", from: :hitly, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -37,8 +37,8 @@ defmodule HitlayWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_hitlay_key",
+    key: "_hitly_key",
     signing_salt: "1U428Eug"
 
-  plug HitlayWeb.Router
+  plug HitlyWeb.Router
 end

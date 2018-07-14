@@ -1,5 +1,5 @@
-defmodule HitlayWeb.ErrorView do
-  use HitlayWeb, :view
+defmodule HitlyWeb.ErrorView do
+  use HitlyWeb, :view
 
   # If you want to customize a particular status code
   # for a certain format, you may uncomment below.

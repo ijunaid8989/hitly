@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :hitlay, HitlayWeb.Endpoint,
+config :hitly, HitlyWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -31,13 +31,13 @@ config :hitlay, HitlayWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :hitlay, HitlayWeb.Endpoint,
+config :hitly, HitlyWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{lib/hitlay_web/views/.*(ex)$},
-      ~r{lib/hitlay_web/templates/.*(eex)$}
+      ~r{lib/hitly_web/views/.*(ex)$},
+      ~r{lib/hitly_web/templates/.*(eex)$}
     ]
   ]
 
@@ -52,9 +52,9 @@ config :phoenix, :stacktrace_depth, 20
 config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
-config :hitlay, Hitlay.Repo,
+config :hitly, Hitly.Repo,
   username: "postgres",
   password: "postgres",
-  database: "hitlay_dev",
+  database: "hitly_dev",
   hostname: "localhost",
   pool_size: 10

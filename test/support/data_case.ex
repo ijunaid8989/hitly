@@ -1,4 +1,4 @@
-defmodule Hitlay.DataCase do
+defmodule Hitly.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -16,20 +16,20 @@ defmodule Hitlay.DataCase do
 
   using do
     quote do
-      alias Hitlay.Repo
+      alias Hitly.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import Hitlay.DataCase
+      import Hitly.DataCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Hitlay.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Hitly.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Hitlay.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Hitly.Repo, {:shared, self()})
     end
 
     :ok
