@@ -1,7 +1,7 @@
 <div class="container">
   <div class="login-form mx-auto d-block w-100">
     <div class="page-header text-center">
-      <h1>Sign Up</h1>
+      <h1>Sign In</h1>
     </div>
     <form action="/" method="post" class="form-validate" _lpchecked="1">
       <div class="form-group">
@@ -20,13 +20,13 @@
       <div class="d-flex justify-content-between">
         <div class="form-group d-flex justify-content-start">
           <div class="controls">
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit" class="btn btn-primary">Sign In</button>
           </div>
         </div>
       </div>
     </form>
     <div class="text-center">
-      <a href="/a/sign_in">Already have an account?</a>
+      <a href="/a/sign_up">Don't have an account?</a>
     </div>
   </div>
 </div>

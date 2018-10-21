@@ -16,8 +16,8 @@ defmodule HitlyWeb.Router do
   scope "/", HitlyWeb do
     pipe_through :browser
 
-    get "/a/sign_up", PageController, :index
-    get "/a/sign_in", PageController, :index
+    get "/a/sign_up", PageController, :sign_up
+    get "/a/sign_in", PageController, :sign_in
 
   end
 
